@@ -18,5 +18,17 @@ arrows.forEach((arrow,i) => {
         });
         console.log(Math.floor(window.innerWidth/270));
     });
-  
+
+let input = document.getElementById("input");
+let inputIcon = document.getElementById("inputIcon");
+let body = document.getElementById("body");
+inputIcon.onclick = function inputClick(){
+    input.style.opacity = 1;
+    body.style.opacity = 0.8;
+}
+
+
+
+
+    
 

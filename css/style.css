@@ -26,6 +26,9 @@ body{
     color: #4dbf00;
     cursor: pointer;
 }
+a:link{
+    text-decoration: none;
+}
 .menu-container{
     flex:5;
 }
@@ -41,6 +44,9 @@ body{
 .active{
     font-weight: bold;
 }
+.profile-arrow{
+    cursor: pointer;
+}
 .profile-container{
     flex: 3;
     display: flex;
@@ -49,12 +55,14 @@ body{
 }
 .profile-text{
     margin: 20px;
+    cursor: pointer;
 }
 .profile-picture{
     background-color: white;
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .toggle{
     width: 40px;
@@ -88,6 +96,26 @@ body{
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+}
+.inputDiv{
+   display: block;
+   margin: 0 auto;
+   padding-left: 300px;
+   padding-top: 180px;
+}
+.input{
+    opacity: 0;
+    transition: all 0.9s ease;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    width: 1000px;
+    height: 30px;
+    line-height: 25px;
 }
 .left-menu-icon{
     color: white;
@@ -151,7 +179,7 @@ body{
     margin: 0 20px;
     opacity: 0.5;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 .game-list-item-image{
     transition: all 1s ease-in-out;
