@@ -26,6 +26,16 @@ inputIcon.onclick = function inputClick(){
     input.style.opacity = 1;
     body.style.opacity = 0.8;
 }
+let toggleBall = document.getElementById("toggleBall");
+let navbar = document.getElementById("navbar");
+let sidebar = document.getElementById("sidebar");
+let container = document.getElementById("container")
+toggleBall.onclick = function modeChange(){
+    // navbar.style.backgroundColor = "white"; 
+    // sidebar.style.backgroundColor = "white";
+    container.style.backgroundColor = "white";
+    container.style.color = "black";
+}
 
 
 
