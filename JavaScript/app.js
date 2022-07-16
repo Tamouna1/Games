@@ -26,16 +26,14 @@ inputIcon.onclick = function inputClick(){
     input.style.opacity = 1;
     body.style.opacity = 0.8;
 }
-let toggleBall = document.getElementById("toggleBall");
-let navbar = document.getElementById("navbar");
-let sidebar = document.getElementById("sidebar");
-let container = document.getElementById("container")
-toggleBall.onclick = function modeChange(){
-    // navbar.style.backgroundColor = "white"; 
-    // sidebar.style.backgroundColor = "white";
-    container.style.backgroundColor = "white";
-    container.style.color = "black";
-}
+const ball = document.querySelector(".toggle-ball");
+const items = document.querySelectorAll(".container,.game-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle");
+ball.addEventListener("click",()=> {
+    items.forEach(item=>{
+        item.classList.toggle("active")
+    })
+    ball.classList.toggle("active")
+})
 
 
 

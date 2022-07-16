@@ -86,6 +86,17 @@ a:link{
     border-radius: 50%;
     cursor: pointer;
 }
+/* .toggleBall2{
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 20px;
+    transition: all 1s ease;
+
+} */
 .sidebar{
     width: 50px;
     height: 100%;
@@ -241,4 +252,27 @@ a:link{
     .menu-container{
         display: none;
     }
+}
+.container.active{
+    background-color: white;
+}
+.game-list-title.active{
+    color: black;
+}
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+.sidebar.active{
+    background-color:white;
+}
+.left-menu-icon.active{
+    color: black;
+}
+.toggle.active{
+    background-color: black;
+}
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
 }
