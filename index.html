@@ -8,8 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Home Page</title>
 </head>
 <body id="body">
     <div class="navbar" id="navbar">
@@ -20,8 +25,8 @@
             <div class="menu-container">
                 <ul class="menu-list">
                     <a href="index.html"><li class="menu-list-item active" >Home</li></a>
-                    <li class="menu-list-item">Popular</li>
-                    <li class="menu-list-item">Latest</li>
+                    <a href="page2.html" target="_blank"><li class="menu-list-item">Popular</li></a>
+                    <a href="page3.html" target="_blank"><li class="menu-list-item">Latest</li></a>
                 </ul>
             </div>
             <div class="profile-container">
@@ -37,7 +42,6 @@
                     <i class="fa-solid fa-moon toggle-icon"></i>
                     <i class="fa-solid fa-sun toggle-icon"></i>
                     <div class="toggle-ball" id="toggleBall"></div>
-                    <!-- <div class="toggleBall2" id="toggleBall2" ></div> -->
                 </div>
             </div>
         </div>
@@ -46,7 +50,7 @@
         <i class="left-menu-icon fa-solid fa-magnifying-glass " id="inputIcon" ></i>
         <i class="left-menu-icon fa-solid fa-house"></i>
         <i class="left-menu-icon fa-solid fa-bookmark"></i>
-        <div class="inputDiv">
+        <div class="inputDiv" id="inputDiv">
             <input class="input" id="input" type="text">
         </div>
     </div>
@@ -56,7 +60,7 @@
                     <p class="featured-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab voluptatibus delectus.
                     </p>
-                    <button class="featured-button">PLAY</button>
+                    <button id="play-btn" class="featured-button">PLAY</button>
             </div>
             <div class="game-list-container"> 
                 <h1 class="game-list-title">Popular</h1>
@@ -226,6 +230,6 @@
                     <i class="fa-solid fa-chevron-right arrow"></i>
                 </div>
             </div>
-    <script src="JavaScript/app.js"></script>
+    <script src="JavaScript/app.js" type="text/babel"></script>
 </body>
 </html>

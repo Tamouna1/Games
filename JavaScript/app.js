@@ -33,7 +33,7 @@ ball.addEventListener("click",()=> {
         item.classList.toggle("active")
     })
     ball.classList.toggle("active")
-})
+});
 
 
 

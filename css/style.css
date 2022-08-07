@@ -254,17 +254,17 @@ a:link{
     }
 }
 .container.active{
-    background-color: white;
+    background-color: rgb(204, 197, 197);
 }
 .game-list-title.active{
     color: black;
 }
 .navbar-container.active{
-    background-color: white;
+    background-color: rgb(204, 197, 197);
     color: black;
 }
 .sidebar.active{
-    background-color:white;
+    background-color:rgb(204, 197, 197);
 }
 .left-menu-icon.active{
     color: black;
@@ -273,6 +273,6 @@ a:link{
     background-color: black;
 }
 .toggle-ball.active{
-    background-color: white;
+    background-color: rgb(204, 197, 197);
     transform: translateX(-20px);
 }

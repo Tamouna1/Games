@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html"><div class="logo-container"><h1 class="logo">
+                Games
+            </h1></div></a>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <a href="index.html"><li class="menu-list-item active" >Home</li></a>
+                    <a href="page2.html" target="_blank"><li class="menu-list-item">Popular</li></a>
+                    <a href="page3.html" target="_blank"><li class="menu-list-item">Latest</li></a>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="profile.png" alt="profile">
+                <div class="profile-text-container">
+                    <span class="profile-text">
+                        Profile
+                        <i class="fa-solid fa-arrow-down profile-arrow"></i>
+                    </span>
+                    
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball" id="toggleBall"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <i class="left-menu-icon fa-solid fa-magnifying-glass " id="inputIcon" ></i>
+        <i class="left-menu-icon fa-solid fa-house"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <div class="inputDiv" id="inputDiv">
+            <input class="input" id="input" type="text">
+        </div>
+    </div>
+    <div class="container">
+
+    </div>
+    <script src="JavaScript/app.js"></script>
+</body>
+</html>
